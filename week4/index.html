@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- landing page -->
+    <!-- start btn -->
+    <section id="landing-page">
+        <h1>BEST QUIZ EVARR</h1>
+        <button id="btn-start">Start</button>
+    </section>
+
+
+
+    <!-- question page -->
+    <section class="hide" id="question-page">
+        <h1>Time Left: <span id="span-timer">60</span>s</h1>
+        <!-- title -->
+        <h1 id="question-title"></h1>
+        <!-- choices -->
+        <!-- list of buttons -->
+        <ul id="list-choices">
+        </ul>
+    </section>
+
+
+
+
+    <!-- end game page -->
+    <section class="hide" id="end-game-page">
+        <!-- input -- type in player's name -->
+        <input placeholder="Name pls" type="text" id="input-player-name">
+        <!-- button -- submit -->
+        <button id="btn-submit-name">Submit</button>
+    </section>
+
+
+    <!-- highscore -->
+    <!-- list of existing highscores -->
+    <section class="hide" id="highscore-page">
+        <ol id="list-highscore">
+            <li>Sam -- 0</li>
+            <li>Hannah -- 10</li>
+            <li>Kyle -- 20</li>
+        </ol>
+    </section>
+
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+
+ 
+
+
+
+</body>
+</html>
