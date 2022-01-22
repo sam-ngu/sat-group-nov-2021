@@ -6,7 +6,7 @@ const spanCurrentUv = document.getElementById("span-current-uv");
 const weatherCards = document.getElementById("weather-cards");
 
 // TODO: BYO api key
-const apiKey = "d91f911bcf2c0f925fb6535547a5ddc9";
+const apiKey = "apikey here";
 
 
 function getCityWeather(city) {
