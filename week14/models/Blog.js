@@ -18,9 +18,17 @@ Blog.init(
         user_id: {
             type: DataTypes.INTEGER,
             references: {
-                key: 'id',
-                model: User,    
-            }
+                key: "id",
+                model: User,
+            },
+        },
+        createdAt: {
+            field: "created_at",
+            type: DataTypes.DATE,
+        },
+        updatedAt: {
+            field: "updated_at",
+            type: DataTypes.DATE,
         },
     },
     {

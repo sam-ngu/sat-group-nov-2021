@@ -1,0 +1,22 @@
+<section>
+
+{{!-- load all the blogs --}}
+
+{{#each blogs as |blog| }}
+
+    <h1>{{blog.title}} -- {{blog.createdAt}}</h1>
+
+    <p>Written by: {{blog.user.name}}</p>
+
+    <p>
+        {{blog.body}}
+    </p>
+
+
+
+
+
+{{/each}}
+
+
+</section>
