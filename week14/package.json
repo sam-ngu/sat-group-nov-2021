@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node db/seeds/index.js",
     "watch": "nodemon server.js"
   },
   "author": "",
@@ -20,6 +21,8 @@
     "sequelize": "^6.17.0"
   },
   "devDependencies": {
+    "@faker-js/faker": "^6.0.0",
+    "@types/sequelize": "^4.28.11",
     "nodemon": "^2.0.15"
   }
 }
