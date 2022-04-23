@@ -24,7 +24,7 @@ warmStrategyCache({
   strategy: pageCache,
 });
 
-registerRoute(({ request }) => {
+registerRoute('', ({ request }) => {
   console.log(request);
 
   if(request.method === 'get' && request.url === '/api/comments'){
@@ -41,4 +41,4 @@ registerRoute(({ request }) => {
 });
 
 // TODO: Implement asset caching
-registerRoute();
+// registerRoute();
