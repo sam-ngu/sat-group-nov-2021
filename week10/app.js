@@ -7,7 +7,6 @@ const Intern = require('./src/employee/intern');
 
 let employees = [];
 
-
 // ask questions
 function prompt(){
     
@@ -82,6 +81,7 @@ function prompt(){
                 )
             );
         }
+       
     
         if (answers.role === "Intern") {
             employees.push(
