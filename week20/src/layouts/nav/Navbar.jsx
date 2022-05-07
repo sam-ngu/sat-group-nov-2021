@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import ShadeButton from "../../components/button/ShadeButton";
 
 export default function Navbar() {
-
   const navItems = [
     {
       title: "Home",
@@ -18,23 +18,39 @@ export default function Navbar() {
     },
   ];
 
+  const liStyle = {
+    listStyle: "none",
+  };
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  function isActive(link){
+    return location.pathname === link;
+  }
+
+  function redirect(link){
+    // navigate(link);
+  }
+
   return (
-    <div >
+    <nav>
+      <ul className="flex items-center justify-center">
+        <li style={liStyle}>LOGO</li>
 
-      
-
-      <ul>
         {navItems.map((item) => {
           return (
-            <li>
-              <Link to={item.link} >{item.title}</Link>
+            <li key={item.link} style={liStyle}>
+              <ShadeButton onClick={redirect(item.link)} isActive={isActive(item.link)}>
+
+                <NavLink  className="font-base" to={item.link}>
+                  {item.title}
+                </NavLink>
+              </ShadeButton>
             </li>
-
-          )
-
+          );
         })}
       </ul>
-
-    </div>
-  )
+    </nav>
+  );
 }
